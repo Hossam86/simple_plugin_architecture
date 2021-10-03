@@ -20,6 +20,6 @@ We refactored our Business Logic into a Plugin Framework that can run registered
 
 Let's implement a example where we have a plugin framework to print to the console. Our project will have the following structure:
 
-1. internal.py  # internal business logic
-2. external.py  # contains user-created plugins
-3.  main.py      # initialize and run application
+1. internal.py  -- internal business logic
+2. external.py  -- contains user-created plugins
+3. main.py      --  initialize and run application
