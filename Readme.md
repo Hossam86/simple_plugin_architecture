@@ -23,3 +23,11 @@ Let's implement a example where we have a plugin framework to print to the conso
 1. internal.py  -- internal business logic
 2. external.py  -- contains user-created plugins
 3. main.py      --  initialize and run application
+
+
+## Discussion
+The Application's plugin framework works for both internal and external plugins. We define internal plugins in the application code. External plugins are initialized and passed into the application at runtime.
+
+Each plugin inherits from the base Python object and has a process() method. Nothing complex, want to keep this example as simple as possible.
+
+We can run our plugins by calling the application's run() method. This method loops over all the plugins and calls each instance's process() function. As we see from the output above, the plugins are executed in the same order as the list.
